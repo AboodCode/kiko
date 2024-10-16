@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --firstColor:#0F0E0E !important;
+    --secoundColor:#541212 !important;
+    --thirdColor:#8B9A46 !important;
+    --fourthtColor:#EEE !important;
+}
+
+body{
+    background-color: var(--fourthtColor) !important;
+}
+/*----------------------------- كل تنسيقات الهيدر */
+
+.breakpoint-on .classy-navbar .classy-menu.menu-on {
+    left: 0;
+    width: 100%;
+}
+.line-h{
+    line-height: 2 !important;
+}
+.justfiy{
+    justify-content: end;
+}
+/*-----------------------------*/
+
+/* --------------------- */
+
+.top-ground{
+    width: 100%;
+    height: 250px;
+}
+
+.top-ground img{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------- */
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30% !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*-----------------------------*/
+
+
+/*----------------------------- كل تنسيقات قسم المميزات */
+
+.right-text{text-align: right;}
+.left-text{text-align: left;}
+.center-text{text-align: center;}
+
+/*-----------------------------*/
+
+.color-1{color: var(--firstColor) !important;}
+.color-2{color: var(--secoundColor) !important;}
+.color-3{color: var(--thirdColor) !important;}
+.color-4{color: var(--fourthtColor) !important;}
+
+.bg-1{background-color: var(--firstColor) !important;}
+.bg-2{background-color: var(--secoundColor) !important;}
+.bg-3{background-color: var(--thirdColor) !important;}
+.bg-4{background-color: var(--fourthtColor) !important;}
+
+.Hcr-1:hover{color: var(--firstColor) !important;}
+.Hcr-2:hover{color: var(--secoundColor) !important;}
+.Hcr-3:hover{color: var(--thirdColor) !important;}
+.Hcr-4:hover{color: var(--fourthtColor) !important;}
+
+.Hbg-1:hover{background-color: var(--firstColor) !important;}
+.Hbg-2:hover{background-color: var(--secoundColor) !important;}
+.Hbg-3:hover{background-color: var(--thirdColor) !important;}
+.Hbg-4:hover{background-color: var(--fourthtColor) !important;}
+
+.center-flex{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.search-area input{
+    background-color: #f5f3f3 !important;
+}
+.ground{
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: #EEE;
+}
+
+.add-fix{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.df-wh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px !important;
+    height: 100px !important; 
+}
+
+.df-wh img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:450px) {
+    
+/*----------------------------- كل تنسيقات بطاقات العرض */
+
+.fixCard{
+    width: 100%;
+    height: 450px;
+}
+
+.top-ground{
+    width: 100%;
+    height: 90px;
+}
+.justfiy{
+    justify-content: center !important;
+}
+
+}
+
+@media (min-width:451px) and (max-width: 767px) {
+
+    .top-ground{
+        width: 100%;
+        height: 130px;
+    }
+    .justfiy{
+        justify-content: center !important;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .fixCard{
+        width: 210px;
+        height: 450px;
+    }
+
+    .top-ground{
+        width: 100%;
+        height: 140px;
+    }
+
+    
+}
+@media (min-width:992px) and (max-width: 1199px) {
+    .fixCard{
+        width: 230px;
+        height: 450px;
+    }
+}
+@media (min-width: 1200px) {
+    .small-f{
+        font-size: 10px !important;
+    }
+} 
+
+
+/* لما تكون السلة فاضية */
+
+.patern-empty{
+    height: 60vh;
+    width: 100%;
+}
+
+.all{
+    height: 100%;
+    width: 100%;
+    background-color: #54121206;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.all .img-ptrn{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all .img-ptrn img {
+    width: 20%;
+}
+
+.all p{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.all .btnback{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all .btnback a{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fourthtColor);
+    color: var(--secoundColor);
+    border: 2px solid var(--secoundColor);
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+}
+
+.all .btnback a:hover{
+    transform: scale(1.1);
+    background-color: #541212;
+    border-color: var(--fourthtColor);
+    color: var(--fourthtColor);
+}
+
+@media (max-width:450px){
+    .all .img-ptrn img {
+        width: 75%;
+    }
+}
+
+/* 
+*/

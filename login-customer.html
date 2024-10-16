@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <title>متجر كعكة السعادة | سلة المشتريات</title>
+        <meta name="description" content="كيكوتيس هو متجر الكعك الرائد حيث يمكنك العثور على مجموعة متنوعة من الكعك اللذيذ والمصنوع يدويًا. استمتع بتجربة تسوق فريدة من نوعها مع خيارات مخصصة تناسب جميع المناسبات!">
+        <meta name="keywords" content="كيكوتيس, كعك, كعك محلي, كعك عيد الميلاد, كعك زفاف, كعك مخصص, متجر كعك">
+      
+        <!-- Favicons -->
+        <link href="assets/img/cakeimg/logo-cake.png" rel="icon">
+        <link href="assets/img/cakeimg/logo-cake.png" rel="apple-touch-icon">
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+      
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      
+        <link rel="stylesheet" href="assets/font/fonts.css">
+        <link rel="stylesheet" href="assets/font/fontUse.css">
+      
+        <link rel="stylesheet" href="assets/css/all.min.css">
+      
+        <!-- Template Main CSS File -->
+        <link href="assets/css/login-customer.css" rel="stylesheet">
+      
+      
+      </head>
+<body>
+    
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" action="Verify-the-number.html">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" required class="login__input font1 user" placeholder="اسم المستخدم" name="username">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-phone"></i>
+                        <input type="number" required class="login__input font1 num" placeholder="رقم الهاتف" maxlength="9" max="9"  name="password">
+                    </div>
+
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" maxlength="20" required class="login__input font1 pass" placeholder="كلمة المرور"  name="password">
+                    </div>
+                    
+                    
+                    <input type="submit" class="login__submit font1" value="دخول" name="login">
+
+
+                </form>
+                <div class="social-login">
+                    <h3 class="font1">انشاء حساب جديد</h3>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+            
+            <button class="re font1">مسح</button>
+
+        </div>
+    </div>
+
+    <script>
+        let buttonRe = document.querySelector("button.re");
+        let user = document.querySelector(".user");
+        let num = document.querySelector(".num");
+        let pass = document.querySelector(".pass");
+
+        buttonRe.onclick = function(){
+            user.value = "";
+            num.value = "";
+            pass.value = "";
+        }
+
+    </script>
+
+</body>
+</html>

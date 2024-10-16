@@ -1,0 +1,9 @@
+.fix-more{
+    flex-direction: row-reverse !important;
+    justify-content: start !important;
+}
+
+.fix-more2{
+    justify-content: start !important;
+    flex-direction: row-reverse !important;
+}
