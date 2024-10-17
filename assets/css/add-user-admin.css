@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --MC:#3B3030;
+    --heightOfInputs:60px;
+    --distanse:35px;
+    --borderOfInputs:7px;
+}
+
+.all{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(108deg, #c4c2bf, #b1b1b15c);
+    padding-top:70px ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all .img-pt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.all .img-pt img{
+    width: 70%;
+}
+
+.all .items{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(244, 244, 230); */
+    padding: 100px 10px 10px 10px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+/*-----*/
+
+.items .name-pt{
+    width: 100%;
+    height: var(--heightOfInputs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.items label.label-item{
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    transition: all .3s ease-in-out;
+    font-size: 10px;
+    color: var(--MC);
+    opacity: 1;
+}
+
+.items input:focus{
+    outline: 2px solid var(--MC);
+}
+
+.items svg{
+    position: absolute;
+    right: 13px;
+    transition: all .3s ease-in-out;
+    font-size: 15px;
+    color: var(--MC);
+}
+
+/*------1*/
+.items .name-pt input{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderOfInputs);
+    border: 0;
+    padding-right: 40px;
+    color: var(--MC);
+
+}
+
+.items .name-pt input[name="user_id"]{
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+
+
+
+
+
+/*-------------*/
+
+/*-----------------*/
+.items .send-pt{
+    
+    margin-top: var(--distanse);
+    width: 100%;
+    display: inline-block;
+    height: var(--heightOfInputs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.items .send-pt input{
+    width: 50%;
+    height: 100%;
+    border-radius: var(--borderOfInputs);
+    border: 0;
+    color: var(--MC);
+    background-color: #fff;
+    flex-direction: row-reverse;
+    text-align: center;
+    font-size: 25px;
+    border: 3px solid var(--MC);
+    transition: .3s all ease-in-out;
+    box-shadow: 0 3px 10px #4240404a;
+}
+.items .send-pt input:hover{
+    border-radius: var(--borderOfInputs);
+    color: #fff;
+    background-color: var(--MC);    
+} 
+
+/******************************************************************/
+/******************************************************************/
+/******************************************************************/
+/******************************************************************/
+/******************************************************************/
+
+@media (max-width:450px) {
+    .all{
+        height: 115vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .all .img-pt{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .all .img-pt img{
+        width: 70%;
+    }
+    
+    .all .items{
+        width: 100%;
+        height: 70%;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    
+    /*-------------------*/
+
+
+}
+
+/***************************************/
+/***************************************/
+/***************************************/
+
+@media (min-width:451px) and (max-width: 767px) {
+    .all{
+        height: 160vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .all .img-pt{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .all .img-pt img{
+        width: 60%;
+    }
+    
+    .all .items{
+        width: 100%;
+        height: 60%;
+        padding: 20px;
+    }
+    
+    /*-------------------*/
+
+}
+
+/***************************************/
+/***************************************/
+/***************************************/
+
+@media (min-width:768px) and (max-width: 991px) {
+    .all{
+        height: 130vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .all .img-pt{
+        width: 100%;
+        height: 45%;
+        margin-bottom: 20px;
+    }
+    
+    .all .img-pt img{
+        width: 55%;
+    }
+    
+    .all .items{
+        width: 70%;
+        height: 50%;
+        padding: 20px;
+    }
+    
+}
+
+
+@media (min-width:992px) and (max-width: 1199px) {
+    
+.all{
+    height: 105vh;
+    justify-content: space-evenly;
+}
+
+.all .img-pt{
+    width: 45%;
+    align-items: center;
+}
+
+
+.all .items{
+    width: 50%;
+    height: 100%;
+    padding: 60px 10px 10px 10px;
+}
+
+form{
+    padding-top: 50px;
+}
+
+/*----btns*/
+
+}
