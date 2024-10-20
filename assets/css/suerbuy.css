@@ -61,8 +61,7 @@ input[type="submit"]:hover {
   background-color: var(--color-two);
 }
 
-.nextpage{
-  margin-top: 10px;
+.countener-buy{
   width: 100%;
   display: flex;
   align-items: center;
@@ -72,8 +71,23 @@ input[type="submit"]:hover {
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.buy{
+  width: 20%;
+  height: 100%;
+  /* background-color: #654520; */
+  color: #fff8e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
   text-decoration: none;
 }
+
+
+
+
 
 
 @media (max-width:450px){

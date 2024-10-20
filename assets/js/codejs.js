@@ -39,3 +39,6 @@ inputFileThree.addEventListener('change', function() {
         labelImgThree.classList.remove('hasphoto'); // إزالة الفصل النشط إذا لم يتم اختيار أي صورة
         }
 });
+
+// -------------------------
+
