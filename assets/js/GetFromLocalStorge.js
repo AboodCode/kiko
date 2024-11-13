@@ -21,19 +21,21 @@ for (let i = 0; i < localStorage.length; i++) {
                     <td>
                       <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
                         
-                        <div class="input-group-append">
+                        <!-- <div class="input-group-append">
                           <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                        </div>
+                        </div> -->
+
 
                         <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">  
 
-                        <div class="input-group-prepend">
+                       <!--  <div class="input-group-prepend">
                           <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                        </div>
+                        </div> -->
+
                       </div>
   
                     </td>
-                    <td>${productData.price}</td>
+                    <!-- <td>${productData.price}</td> -->
                     <td><a href="#" class="btn btn-black btn-sm"><i class="fa-solid fa-trash"></i></a></td>
                   
         
