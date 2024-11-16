@@ -322,9 +322,6 @@
 // -----------------------
 // -----------------------
 
-
-
-
 // ذا حق البحث ما تنساش يا عبود تفكه بعدين
 // let searchitem = document.querySelector(".search-said input");
 // let searchbtn = document.querySelector(".search-said a");
@@ -336,9 +333,12 @@
 // }
 
 
+
+
+// -----
 let lengthofcert ;
 let countercert = document.querySelector(".counter-cert");
-countercert.innerHTML = localStorage.length;
+countercert.textContent = localStorage.length;
 
 document.querySelectorAll('.link-buy').forEach(button => {
   button.addEventListener('click', function(event) {
@@ -373,6 +373,7 @@ document.querySelectorAll('.link-buy').forEach(button => {
 
       // يمكنك استخدام مفتاح فريد لتخزين البيانات
       const productKey = `product-${Date.now()}`; // أو استخدم اسم فريد آخر
+      // const productKey = `product`; // أو استخدم اسم فريد آخر
       localStorage.setItem(productKey, JSON.stringify(productData));
 
       // رسالة تأكيد (اختياري)
@@ -386,4 +387,6 @@ countercert.innerHTML = lengthofcert;
 
 });
 });
+
+// -----النهاية لكود الاضافة للسلة
 

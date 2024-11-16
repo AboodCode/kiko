@@ -17,7 +17,7 @@ for (let i = 0; i < localStorage.length; i++) {
                     <td class="product-name">
                       <h2 class="h5 text-black">${productData.name}</h2>
                     </td>
-                    <td>${productData.price} <span>ر.ي</span></td>
+                    <td class="priceproduct">${productData.price} <span>ر.ي</span></td>
                     <td>
                       <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
                         

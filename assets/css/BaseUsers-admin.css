@@ -18,7 +18,7 @@
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 1px;
-    background-color: #9E3232;
+    background-color: #5f6b7e;
   }
  
   /*-------*/
@@ -44,7 +44,7 @@
   .card {
     width: 340px;
     height: 295px;
-    background-color: #9E3232;
+    background-color: #5f6b7e;
     border: 3px solid #fff;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -76,7 +76,7 @@
   
   .card ul.one li {
     margin-bottom: 22px;
-    color: #9E3232;
+    color: #5f6b7e;
     font-size: 20px;
     font-weight: bold;
   }
@@ -92,7 +92,7 @@
   
   .card ul.two li {
     margin-bottom: 22px;
-    color: #9E3232;
+    color: #5f6b7e;
     font-size: 20px;
     font-weight: bold;
   }
